@@ -7,6 +7,7 @@ import retrofit2.Callback;
 import retrofit2.Retrofit;
 import retrofit2.converter.gson.GsonConverterFactory;
 
+
 public class AuthServiceClient {
     private static final String BASE_URL = "http://localhost:8083/auth/";
 
@@ -40,6 +41,10 @@ public class AuthServiceClient {
     public void logout(String token, Callback<Boolean> callback) {
         // passem token com a string
         authService.logout(token).enqueue(callback);
+
+    }
+    public AuthService getAuthService() {
+        return authService;
     }
 }
 

@@ -53,10 +53,11 @@ public class LoginPanel extends JPanel {
         gbc.anchor = GridBagConstraints.LINE_END;
         formPanel.add(userLabel, gbc);
 
-        userText = new JTextField(15);
+        userText = new JTextField(20); // Aumentamos el tamaño del JTextField
         userText.setFont(new Font("Arial", Font.PLAIN, 14));
         gbc.gridx = 1;
         gbc.anchor = GridBagConstraints.LINE_START;
+        gbc.fill = GridBagConstraints.HORIZONTAL; // Llenar horizontalmente
         formPanel.add(userText, gbc);
 
         // Contraseña label y campo de texto
@@ -67,10 +68,11 @@ public class LoginPanel extends JPanel {
         gbc.anchor = GridBagConstraints.LINE_END;
         formPanel.add(passLabel, gbc);
 
-        passText = new JPasswordField(15);
+        passText = new JPasswordField(20); // Aumentamos el tamaño del JPasswordField
         passText.setFont(new Font("Arial", Font.PLAIN, 14));
         gbc.gridx = 1;
         gbc.anchor = GridBagConstraints.LINE_START;
+        gbc.fill = GridBagConstraints.HORIZONTAL; // Llenar horizontalmente
         formPanel.add(passText, gbc);
 
         // Botón de login
@@ -84,8 +86,9 @@ public class LoginPanel extends JPanel {
         // Añadir el botón de login en la última fila
         gbc.gridx = 0;
         gbc.gridy = 4;
-        gbc.gridwidth = 2;
+        gbc.gridwidth = 2; // El botón ocupará dos columnas
         gbc.anchor = GridBagConstraints.CENTER;
+        gbc.fill = GridBagConstraints.HORIZONTAL; // Hacer que el botón ocupe todo el ancho
         formPanel.add(loginButton, gbc);
 
         // Agregar el formulario (formPanel) al centro del panel principal

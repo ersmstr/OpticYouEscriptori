@@ -17,12 +17,13 @@ public class InitScreen {
     public InitScreen(String appName) {
         frame = new JFrame(appName + " - Login");
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        frame.setSize(600, 500);
-        frame.setLocationRelativeTo(null);
+
 
         loginPanel = new LoginPanel();
         frame.add(loginPanel, BorderLayout.CENTER);
 
+        frame.pack();
+        frame.setLocationRelativeTo(null);
         frame.setVisible(true);
 
         setupLoginListener();
