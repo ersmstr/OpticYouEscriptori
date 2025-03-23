@@ -1,5 +1,7 @@
 package OpticYou.service.ProvesIntegracio;
-
+/**
+ * Autor: mrami
+ */
 import opticyou.OpticYou.service.AuthService;
 import opticyou.OpticYou.service.AuthServiceClient;
 import opticyou.OpticYou.service.LoginRequestDTO;

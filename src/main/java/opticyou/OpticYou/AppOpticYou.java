@@ -1,5 +1,7 @@
 package opticyou.OpticYou;
-
+/**
+ * Autor: mrami
+ */
 import com.formdev.flatlaf.FlatLightLaf;
 import opticyou.OpticYou.ui.InitScreen;
 
@@ -16,7 +18,7 @@ public class AppOpticYou {
                 e.printStackTrace();
             }
 
-            new InitScreen(APP_NAME); // Inicia la ventana principal
+            new InitScreen(APP_NAME); // Inicia la finestra principal
         });
     }
 }

@@ -1,5 +1,7 @@
 package opticyou.OpticYou.service;
-
+/**
+ * Autor: mrami
+ */
 import okhttp3.OkHttpClient;
 import okhttp3.logging.HttpLoggingInterceptor;
 import retrofit2.Call;
@@ -41,8 +43,12 @@ public class AuthServiceClient {
     public void logout(String token, Callback<Boolean> callback) {
         // passem token com a string
         authService.logout(token).enqueue(callback);
-
     }
+    // Constructor per a tests (permiteix injectar un mock)
+    public AuthServiceClient(AuthService authService) {
+        this.authService = authService;
+    }
+
     public AuthService getAuthService() {
         return authService;
     }

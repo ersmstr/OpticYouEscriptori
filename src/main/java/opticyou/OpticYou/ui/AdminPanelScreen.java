@@ -1,5 +1,7 @@
 package opticyou.OpticYou.ui;
-
+/**
+ * Autor: mrami
+ */
 import opticyou.OpticYou.service.LogoutService;
 
 import javax.swing.*;
@@ -27,7 +29,7 @@ public class AdminPanelScreen {
         JButton logoutButton = new JButton("Logout");
         logoutButton.addActionListener(e -> {
             // Lógica de logout al hacer click en el botón
-            System.out.println("Logout presionado.");
+            System.out.println("Logout.");
 
             // Aquí es donde se llama a la clase LogoutService para hacer el logout
             LogoutService logoutService = new LogoutService(); // Creamos una instancia de LogoutService

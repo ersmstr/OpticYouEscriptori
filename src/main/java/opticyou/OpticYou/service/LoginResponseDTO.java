@@ -1,10 +1,17 @@
 package opticyou.OpticYou.service;
-
+/**
+ * Autor: mrami
+ */
 public class LoginResponseDTO {
     private boolean success;
     private String token;
     private String rol;
 
+    public LoginResponseDTO(boolean success, String token, String rol) {
+        this.success = success;
+        this.token = token;
+        this.rol = rol;
+    }
     // Getter y Setter para success
     public boolean isSuccess() {
         return success;
@@ -31,6 +38,7 @@ public class LoginResponseDTO {
     public void setRol(String rol) {
         this.rol = rol;
     }
+
 }
 
 

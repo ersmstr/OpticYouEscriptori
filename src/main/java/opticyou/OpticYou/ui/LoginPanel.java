@@ -1,4 +1,7 @@
 package opticyou.OpticYou.ui;
+/**
+ * Autor: mrami
+ */
 
 import javax.swing.*;
 import java.awt.*;
@@ -41,11 +44,11 @@ public class LoginPanel extends JPanel {
         gbc.insets = new Insets(50, 10, 10, 10); // Aumentar el espacio superior
         formPanel.add(logoLabel, gbc);
 
-        // Añadir el título debajo del logo
+        // afegir títol baix del logo
         gbc.gridy = 1;
         formPanel.add(titleLabel, gbc);
 
-        // Email label y campo de texto
+        // Email label y camp de text
         JLabel userLabel = new JLabel("EMAIL:");
         userLabel.setFont(new Font("Arial", Font.BOLD, 14));
         gbc.gridy = 2;
@@ -53,7 +56,7 @@ public class LoginPanel extends JPanel {
         gbc.anchor = GridBagConstraints.LINE_END;
         formPanel.add(userLabel, gbc);
 
-        userText = new JTextField(20); // Aumentamos el tamaño del JTextField
+        userText = new JTextField(20); // TAmany del del JTextField
         userText.setFont(new Font("Arial", Font.PLAIN, 14));
         gbc.gridx = 1;
         gbc.anchor = GridBagConstraints.LINE_START;
@@ -68,11 +71,11 @@ public class LoginPanel extends JPanel {
         gbc.anchor = GridBagConstraints.LINE_END;
         formPanel.add(passLabel, gbc);
 
-        passText = new JPasswordField(20); // Aumentamos el tamaño del JPasswordField
+        passText = new JPasswordField(20); //
         passText.setFont(new Font("Arial", Font.PLAIN, 14));
         gbc.gridx = 1;
         gbc.anchor = GridBagConstraints.LINE_START;
-        gbc.fill = GridBagConstraints.HORIZONTAL; // Llenar horizontalmente
+        gbc.fill = GridBagConstraints.HORIZONTAL;
         formPanel.add(passText, gbc);
 
         // Botón de login
@@ -83,7 +86,7 @@ public class LoginPanel extends JPanel {
         loginButton.setFocusPainted(false);
         loginButton.setBorder(BorderFactory.createEmptyBorder(5, 15, 5, 15));
 
-        // Añadir el botón de login en la última fila
+        // Afegir el botón de login darrera fila
         gbc.gridx = 0;
         gbc.gridy = 4;
         gbc.gridwidth = 2; // El botón ocupará dos columnas
@@ -91,11 +94,11 @@ public class LoginPanel extends JPanel {
         gbc.fill = GridBagConstraints.HORIZONTAL; // Hacer que el botón ocupe todo el ancho
         formPanel.add(loginButton, gbc);
 
-        // Agregar el formulario (formPanel) al centro del panel principal
+        // afegir el formulari (formPanel) al centre
         this.add(formPanel, BorderLayout.CENTER);
     }
 
-    // Métodos para obtener los valores de los campos y el botón
+    // Métodos per obtenir els valors
     public String getEmail() {
         return userText.getText();
     }

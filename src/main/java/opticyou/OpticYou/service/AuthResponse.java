@@ -1,5 +1,7 @@
 package opticyou.OpticYou.service;
-
+/**
+ * Autor: mrami
+ */
 public class AuthResponse {
     private String token;
 

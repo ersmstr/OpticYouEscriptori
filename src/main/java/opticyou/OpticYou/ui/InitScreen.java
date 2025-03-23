@@ -1,5 +1,7 @@
 package opticyou.OpticYou.ui;
-
+/**
+ * Autor: mrami
+ */
 
 import opticyou.OpticYou.service.AuthServiceClient;
 import opticyou.OpticYou.service.LoginResponseDTO;
@@ -62,7 +64,7 @@ public class InitScreen {
 
                 @Override
                 public void onFailure(Call<LoginResponseDTO> call, Throwable t) {
-                    showErrorMessage("Error en la conexión: " + t.getMessage());
+                    showErrorMessage("Error en la conexió: " + t.getMessage());
                 }
             });
         });

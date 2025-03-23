@@ -13,6 +13,12 @@
         <maven.compiler.target>1.8</maven.compiler.target>
     </properties>
 
+    <developers>
+        <developer>
+            <id>mrb</id>
+            <name>Martina Ramis Bisquerra</name>
+        </developer>
+    </developers>
 
     <dependencies>
 
@@ -69,6 +75,14 @@
             <version>3.19.0</version>
             <scope>test</scope>
         </dependency>
+
+        <dependency>
+            <groupId>com.squareup.retrofit2</groupId>
+            <artifactId>retrofit-mock</artifactId>
+            <version>2.9.0</version>
+            <scope>test</scope>
+        </dependency>
+
         </dependencies>
 
 
