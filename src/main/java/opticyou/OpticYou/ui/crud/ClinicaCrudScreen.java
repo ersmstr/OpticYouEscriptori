@@ -1,0 +1,203 @@
+package opticyou.OpticYou.ui.crud;
+
+/**
+ * Autor: mrami
+ */
+
+import javax.swing.*;
+import javax.swing.table.DefaultTableModel;
+import java.awt.*;
+import java.awt.event.ActionListener;
+
+public class ClinicaCrudScreen extends JPanel {
+    private JTextField txtNom;
+    private JTextField txtDireccio;
+    private JTextField txtEmail;
+    private JTextField txtTelefon;
+    private JTextField txtHorariApertura;
+    private JTextField txtHorariTancament;
+
+    private JButton btnAfegir;
+    private JButton btnActualitzar;
+    private JButton btnEliminar;
+    private JTable clinicaTable;
+
+    public ClinicaCrudScreen() {
+        // Layout de la pantalla
+        setLayout(new BorderLayout());  // Usamos BorderLayout per dividir la pantalla en dues seccions
+        setBackground(new Color(173, 216, 230));  // Fons amb color blau clar
+
+        // Panell esquerre per al formulari
+        JPanel leftPanel = new JPanel();
+        leftPanel.setLayout(new GridBagLayout());
+        GridBagConstraints gbc = new GridBagConstraints();
+        leftPanel.setBackground(new Color(173, 216, 230));  // Color del panell esquerre
+
+        // Crear camp de text per al nom de la clínica
+        JLabel lblNomCentre = new JLabel("CLÍNICA:");
+        gbc.gridx = 0;
+        gbc.gridy = 0;
+        gbc.insets = new Insets(10, 10, 5, 10);  // Espaciat entre els components
+        gbc.fill = GridBagConstraints.HORIZONTAL;
+        leftPanel.add(lblNomCentre, gbc);
+
+        txtNom = new JTextField(20);  // Ample fix per al camp de text
+        gbc.gridx = 1;
+        gbc.gridy = 0;
+        gbc.insets = new Insets(10, 10, 5, 10);
+        leftPanel.add(txtNom, gbc);
+
+        // Crear camp de text per la direcció
+        JLabel lblDireccio = new JLabel("Direcció:");
+        gbc.gridx = 0;
+        gbc.gridy = 1;
+        gbc.insets = new Insets(10, 10, 5, 10);
+        leftPanel.add(lblDireccio, gbc);
+
+        txtDireccio = new JTextField(20);  // Ample fix per al camp de text
+        gbc.gridx = 1;
+        gbc.gridy = 1;
+        gbc.insets = new Insets(10, 10, 5, 10);
+        leftPanel.add(txtDireccio, gbc);
+
+        // Crear camp de text per l'email
+        JLabel lblEmail = new JLabel("Email:");
+        gbc.gridx = 0;
+        gbc.gridy = 2;
+        gbc.insets = new Insets(10, 10, 5, 10);
+        leftPanel.add(lblEmail, gbc);
+
+        txtEmail = new JTextField(20);  // Ample fix per al camp de text
+        gbc.gridx = 1;
+        gbc.gridy = 2;
+        gbc.insets = new Insets(10, 10, 5, 10);
+        leftPanel.add(txtEmail, gbc);
+
+        // Crear camp de text per al telèfon
+        JLabel lblTelefon = new JLabel("Telèfon:");
+        gbc.gridx = 0;
+        gbc.gridy = 3;
+        gbc.insets = new Insets(10, 10, 5, 10);
+        leftPanel.add(lblTelefon, gbc);
+
+        txtTelefon = new JTextField(20);  // Ample fix per al camp de text
+        gbc.gridx = 1;
+        gbc.gridy = 3;
+        gbc.insets = new Insets(10, 10, 5, 10);
+        leftPanel.add(txtTelefon, gbc);
+
+        // Crear camp de text per l'horari d'obertura
+        JLabel lblHorariA = new JLabel("Horari Apertura:");
+        gbc.gridx = 0;
+        gbc.gridy = 4;
+        gbc.insets = new Insets(10, 10, 5, 10);
+        leftPanel.add(lblHorariA, gbc);
+
+        txtHorariApertura = new JTextField(20);  // Ample fix per al camp de text
+        gbc.gridx = 1;
+        gbc.gridy = 4;
+        gbc.insets = new Insets(10, 10, 5, 10);
+        leftPanel.add(txtHorariApertura, gbc);
+
+        // Crear camp de text per l'horari de tancament
+        JLabel lblHorariT = new JLabel("Horari Tancament:");
+        gbc.gridx = 0;
+        gbc.gridy = 5;
+        gbc.insets = new Insets(10, 10, 5, 10);
+        leftPanel.add(lblHorariT, gbc);
+
+        txtHorariTancament = new JTextField(20);  // Ample fix per al camp de text
+        gbc.gridx = 1;
+        gbc.gridy = 5;
+        gbc.insets = new Insets(10, 10, 5, 10);
+        leftPanel.add(txtHorariTancament, gbc);
+
+        // Crear panell per als botons CRUD
+        JPanel buttonPanel = new JPanel();
+        buttonPanel.setLayout(new FlowLayout(FlowLayout.CENTER));  // Botons alineats horitzontalment
+        buttonPanel.setBackground(new Color(173, 216, 230));  // Fons igual al del formulari
+
+        btnAfegir = new JButton("Afegir Clínica");
+        btnActualitzar = new JButton("Actualitzar Clínica");
+        btnEliminar = new JButton("Eliminar Clínica");
+
+        buttonPanel.add(btnAfegir);
+        buttonPanel.add(btnActualitzar);
+        buttonPanel.add(btnEliminar);
+
+        // Col·locar el panell de botons al formulari
+        gbc.gridx = 0;
+        gbc.gridy = 6;
+        gbc.gridwidth = 2;  // El panell de botons ocupa dues columnes
+        gbc.insets = new Insets(10, 10, 10, 10);
+        leftPanel.add(buttonPanel, gbc);
+
+        // Panell dret per a la taula
+        JPanel rightPanel = new JPanel();
+        rightPanel.setLayout(new BorderLayout());
+        rightPanel.setBackground(new Color(173, 216, 230));
+
+        // Taula per mostrar les clíniques
+        clinicaTable = new JTable();
+        clinicaTable.setModel(new DefaultTableModel(
+                new Object[][] {},
+                new String[] {"Codi", "Nom del Centre"}  // Columnes per al codi i nom
+        ));
+        JScrollPane scrollPane = new JScrollPane(clinicaTable);
+        scrollPane.setPreferredSize(new Dimension(500, 200));  // Ajustar el tamany de la taula
+
+        // Col·locar la taula al panell dret
+        rightPanel.add(scrollPane, BorderLayout.CENTER);
+
+        // Crear una divisió en el BorderLayout
+        JSplitPane splitPane = new JSplitPane(JSplitPane.HORIZONTAL_SPLIT, leftPanel, rightPanel);
+        splitPane.setDividerLocation(400);  // Ajustar la posició de la divisió
+        splitPane.setResizeWeight(0.5);  // Permetre redimensionar equitativament
+        add(splitPane, BorderLayout.CENTER);
+
+        // Ajustar mida del panell
+        setPreferredSize(new Dimension(900, 400));
+    }
+
+    // Mètodes d'accés als camps, per obtenir els valors del formulari:
+    public String getNomCentre() {
+        return txtNom.getText();
+    }
+
+    public String getDireccio() {
+        return txtDireccio.getText();
+    }
+
+    public String getEmail() {
+        return txtEmail.getText();
+    }
+
+    public String getTelefon() {
+        return txtTelefon.getText();
+    }
+
+    public String getHorariApertura() {
+        return txtHorariApertura.getText();
+    }
+
+    public String getHorariTancament() {
+        return txtHorariTancament.getText();
+    }
+
+    public JTable getClinicaTable() {
+        return clinicaTable;
+    }
+
+    // Mètodes per afegir els listeners als botons
+    public void setAfegirListener(ActionListener listener) {
+        btnAfegir.addActionListener(listener);
+    }
+
+    public void setActualitzarListener(ActionListener listener) {
+        btnActualitzar.addActionListener(listener);
+    }
+
+    public void setEliminarListener(ActionListener listener) {
+        btnEliminar.addActionListener(listener);
+    }
+}

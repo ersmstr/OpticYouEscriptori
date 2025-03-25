@@ -1,17 +1,18 @@
-package opticyou.OpticYou.ui;
+package opticyou.OpticYou.ui.treballador;
 /**
  * Autor: mrami
  */
+//OpticYou client
 import opticyou.OpticYou.service.LogoutService;
 import javax.swing.*;
 import java.awt.*;
 
-public class ClientScreen {
+public class TreballadorScreen {
     private static final String APP_NAME = "OpticYou";
     private String token;
 
-    public ClientScreen(String token) {
-        this.token = token;
+    public TreballadorScreen(String token) {
+       // this.token = token;
 
         // Crear el JFrame principal
         JFrame frame = new JFrame(APP_NAME + " - Pantalla NEGOCI");
@@ -19,7 +20,7 @@ public class ClientScreen {
         frame.setSize(600, 400);
         frame.setLayout(new BorderLayout());
 
-        // 🔹 1. Crear el panell central (Menú d'opcions')
+        //  Crear el panell central (Menú d'opcions')
         JPanel menuPanel = new JPanel();
         menuPanel.setLayout(new GridLayout(5, 1, 10, 10)); // Disposició 5 files, 1 columna
         menuPanel.setBackground(new Color(50, 50, 50)); // Color de fond

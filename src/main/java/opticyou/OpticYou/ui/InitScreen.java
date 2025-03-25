@@ -5,6 +5,8 @@ package opticyou.OpticYou.ui;
 
 import opticyou.OpticYou.service.AuthServiceClient;
 import opticyou.OpticYou.service.LoginResponseDTO;
+import opticyou.OpticYou.ui.admin.AdminPanelScreen;
+import opticyou.OpticYou.ui.treballador.TreballadorScreen;
 import retrofit2.Call;
 import retrofit2.Callback;
 import retrofit2.Response;
@@ -17,6 +19,7 @@ public class InitScreen {
     private LoginPanel loginPanel;
 
     public InitScreen(String appName) {
+        System.out.println("FINESTRA LOGIN...");
         frame = new JFrame(appName + " - Login");
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 
@@ -47,10 +50,13 @@ public class InitScreen {
 
                             frame.dispose();
 
-                            // Abrir pantalla según el rol
+                            // obrir pantalla segon el rol
+                            System.out.println("ROL OBTINGUT: " + loginResponse.getRol());
                             if ("TREBALLADOR".equalsIgnoreCase(loginResponse.getRol())) {
-                                new ClientScreen(loginResponse.getToken());
+
+                                new TreballadorScreen(loginResponse.getToken());
                             } else if ("ADMIN".equalsIgnoreCase(loginResponse.getRol())) {
+
                                 new AdminPanelScreen(loginResponse.getToken());
                             }
 

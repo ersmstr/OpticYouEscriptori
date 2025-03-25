@@ -5,47 +5,44 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2ee8d610-bfb4-4e22-aa68-11343da4646c" name="Changes" comment="prova">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_squareup_retrofit2_retrofit_mock_2_9_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/opticyou/OpticYou/ui/admin/TestAdminPanelScreen.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/opticyou/OpticYou/ui/crud/ClinicaCrudScreen.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_formdev_flatlaf_3_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_code_gson_gson_2_8_5.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_squareup_okhttp3_logging_interceptor_4_9_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_squareup_okhttp3_okhttp_4_9_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_squareup_okio_okio_2_8_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_squareup_retrofit2_converter_gson_2_9_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_squareup_retrofit2_retrofit_2_10_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_squareup_retrofit2_retrofit_mock_2_9_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apiguardian_apiguardian_api_1_1_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_assertj_assertj_core_3_19_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_checkerframework_checker_qual_3_5_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_jetbrains_annotations_13_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_jetbrains_kotlin_kotlin_stdlib_1_4_10.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_jetbrains_kotlin_kotlin_stdlib_common_1_4_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_jetbrains_kotlin_kotlin_stdlib_jdk7_1_4_10.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_jetbrains_kotlin_kotlin_stdlib_jdk8_1_4_10.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_json_json_20210307.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_jupiter_junit_jupiter_api_5_7_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_jupiter_junit_jupiter_engine_5_7_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_platform_junit_platform_commons_1_7_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_platform_junit_platform_engine_1_7_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_opentest4j_opentest4j_1_2_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_postgresql_postgresql_42_2_23.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_19_3_2025_23_52__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_19_3_2025_23_52__Changes_.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/OpticYouTea2.iml" beforeDir="false" afterPath="$PROJECT_DIR$/OpticYouTea2.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/opticyou/OpticYou/AppOpticYou.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/opticyou/OpticYou/AppOpticYou.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/opticyou/OpticYou/service/ApiClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/opticyou/OpticYou/service/ApiClient.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/opticyou/OpticYou/service/AuthResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/opticyou/OpticYou/service/AuthResponse.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/opticyou/OpticYou/service/AuthService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/opticyou/OpticYou/service/AuthService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/opticyou/OpticYou/service/AuthServiceClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/opticyou/OpticYou/service/AuthServiceClient.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/opticyou/OpticYou/service/LoginRequestDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/opticyou/OpticYou/service/LoginRequestDTO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/opticyou/OpticYou/service/LoginResponseDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/opticyou/OpticYou/service/LoginResponseDTO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/opticyou/OpticYou/service/LogoutService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/opticyou/OpticYou/service/LogoutService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/opticyou/OpticYou/ui/AdminPanelScreen.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/opticyou/OpticYou/ui/AdminPanelScreen.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/opticyou/OpticYou/ui/ClientScreen.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/opticyou/OpticYou/ui/ClientScreen.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpticYouTea2.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/opticyou/OpticYou/ui/AdminPanelScreen.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/opticyou/OpticYou/ui/admin/AdminPanelScreen.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/opticyou/OpticYou/ui/ClientScreen.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/opticyou/OpticYou/ui/treballador/TreballadorScreen.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/opticyou/OpticYou/ui/InitScreen.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/opticyou/OpticYou/ui/InitScreen.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/opticyou/OpticYou/ui/LoginPanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/opticyou/OpticYou/ui/LoginPanel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/OpticYou/service/ProvesIntegracio/LoginServidor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/OpticYou/service/ProvesIntegracio/LoginServidor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/OpticYou/service/ProvesIntegracio/RolsServidor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/OpticYou/service/ProvesIntegracio/RolsServidor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/OpticYou/service/ProvesUnitaries/AuthServiceClientTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/OpticYou/service/TestClientScreen.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/opticyou/OpticYou/AppOpticYou.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/opticyou/OpticYou/AppOpticYou.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/opticyou/OpticYou/service/ApiClient.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/opticyou/OpticYou/service/ApiClient.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/opticyou/OpticYou/service/AuthResponse.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/opticyou/OpticYou/service/AuthResponse.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/opticyou/OpticYou/service/AuthServiceClient.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/opticyou/OpticYou/service/AuthServiceClient.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/opticyou/OpticYou/service/LoginRequestDTO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/opticyou/OpticYou/service/LoginRequestDTO.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/opticyou/OpticYou/service/LoginResponseDTO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/opticyou/OpticYou/service/LoginResponseDTO.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/opticyou/OpticYou/service/LogoutService$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/opticyou/OpticYou/service/LogoutService$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/opticyou/OpticYou/service/LogoutService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/opticyou/OpticYou/service/LogoutService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/opticyou/OpticYou/ui/AdminPanelScreen.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/opticyou/OpticYou/ui/AdminPanelScreen.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/opticyou/OpticYou/ui/ClientScreen.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/opticyou/OpticYou/ui/ClientScreen.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/opticyou/OpticYou/ui/AdminPanelScreen.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/opticyou/OpticYou/ui/ClientScreen.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/opticyou/OpticYou/ui/InitScreen$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/opticyou/OpticYou/ui/InitScreen$1.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/opticyou/OpticYou/ui/InitScreen.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/opticyou/OpticYou/ui/InitScreen.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/opticyou/OpticYou/ui/LoginPanel.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/opticyou/OpticYou/ui/LoginPanel.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/OpticYou/service/ProvesIntegracio/LoginServidor$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/OpticYou/service/ProvesIntegracio/LoginServidor$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/OpticYou/service/ProvesIntegracio/LoginServidor$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/OpticYou/service/ProvesIntegracio/LoginServidor$2.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/OpticYou/service/ProvesIntegracio/LoginServidor.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/OpticYou/service/ProvesIntegracio/LoginServidor.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/OpticYou/service/ProvesIntegracio/RolsServidor.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/OpticYou/service/ProvesIntegracio/RolsServidor.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/OpticYou/service/ProvesUnitaries/AuthServiceClientTest$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/OpticYou/service/ProvesUnitaries/AuthServiceClientTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/OpticYou/service/TestClientScreen.class" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -72,13 +69,9 @@
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
-  <component name="MavenImportPreferences">
-    <option name="generalSettings">
-      <MavenGeneralSettings>
-        <option name="useMavenConfig" value="true" />
-      </MavenGeneralSettings>
-    </option>
-  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 7
+}</component>
   <component name="ProjectId" id="2u8TI8ggzzd7dgQJURZGQIzrbS9" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -89,11 +82,18 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Application.TestAdminPanelScreen.executor": "Run",
+    "Application.opticyou.OpticYou.AppOpticYou.executor": "Run",
+    "JUnit.RolsServidor.executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "git-widget-placeholder": "main",
+    "ignore.virus.scanning.warn.message": "true",
+    "kotlin-language-version-configured": "true",
     "last_directory_selection": "C:/Martina/OpticYouEsc/src/test/java",
-    "last_opened_file_path": "C:/Users/mrami/Downloads/swing",
+    "last_opened_file_path": "C:/TEA3_Escriptori/OpticYouEsc",
     "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2",
@@ -111,13 +111,13 @@
       <recent name="main.java" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.RolsServidor">
-    <configuration name="TestClientScreen" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="OpticYou.service.ProvesUnitaries.TestClientScreen" />
-      <module name="OpticYouTea2" />
+  <component name="RunManager" selected="Application.TestAdminPanelScreen">
+    <configuration name="TestAdminPanelScreen" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="opticyou.OpticYou.ui.admin.TestAdminPanelScreen" />
+      <module name="optic-you-swing" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="OpticYou.service.ProvesUnitaries.*" />
+          <option name="PATTERN" value="opticyou.OpticYou.ui.admin.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -126,8 +126,10 @@
       </method>
     </configuration>
     <configuration name="opticyou.OpticYou.AppOpticYou" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="ALTERNATIVE_JRE_PATH" value="$PROJECT_DIR$/../../Program Files/Java/jdk-21" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
       <option name="MAIN_CLASS_NAME" value="opticyou.OpticYou.AppOpticYou" />
-      <module name="OpticYouTea2" />
+      <module name="optic-you-swing" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="opticyou.OpticYou.*" />
@@ -169,7 +171,7 @@
       </method>
     </configuration>
     <configuration name="RolsServidor" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="OpticYouTea2" />
+      <module name="optic-you-swing" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="OpticYou.service.ProvesIntegracio.*" />
@@ -178,6 +180,7 @@
       </extension>
       <option name="PACKAGE_NAME" value="OpticYou.service.ProvesIntegracio" />
       <option name="MAIN_CLASS_NAME" value="OpticYou.service.ProvesIntegracio.RolsServidor" />
+      <option name="METHOD_NAME" value="" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -185,11 +188,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.TestAdminPanelScreen" />
+        <item itemvalue="Application.opticyou.OpticYou.AppOpticYou" />
         <item itemvalue="JUnit.RolsServidor" />
         <item itemvalue="JUnit.LoginServidor" />
-        <item itemvalue="Application.opticyou.OpticYou.AppOpticYou" />
         <item itemvalue="JUnit.AuthServiceClientTest" />
-        <item itemvalue="Application.TestClientScreen" />
       </list>
     </recent_temporary>
   </component>
@@ -213,6 +216,11 @@
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
+    <option name="OPEN_GENERIC_TABS">
+      <map>
+        <entry key="bbd7c0c4-6399-4e1b-ab70-e823b54e3081" value="TOOL_WINDOW" />
+      </map>
+    </option>
     <option name="TAB_STATES">
       <map>
         <entry key="MAIN">
@@ -250,11 +258,6 @@
         </entry>
       </map>
     </option>
-    <option name="OPEN_GENERIC_TABS">
-      <map>
-        <entry key="bbd7c0c4-6399-4e1b-ab70-e823b54e3081" value="TOOL_WINDOW" />
-      </map>
-    </option>
   </component>
   <component name="VcsManagerConfiguration">
     <ignored-roots>
@@ -262,5 +265,16 @@
     </ignored-roots>
     <MESSAGE value="prova" />
     <option name="LAST_COMMIT_MESSAGE" value="prova" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/opticyou/OpticYou/ui/admin/AdminPanelScreen.java</url>
+          <line>61</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
