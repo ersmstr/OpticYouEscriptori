@@ -24,7 +24,7 @@ public class ClinicaCrudScreen extends JPanel {
 
     public ClinicaCrudScreen() {
         // Layout de la pantalla
-        setLayout(new BorderLayout());  // Usamos BorderLayout per dividir la pantalla en dues seccions
+        setLayout(new BorderLayout());  //  BorderLayout per dividir la pantalla en dues seccions
         setBackground(new Color(173, 216, 230));  // Fons amb color blau clar
 
         // Panell esquerre per al formulari
@@ -133,9 +133,17 @@ public class ClinicaCrudScreen extends JPanel {
         leftPanel.add(buttonPanel, gbc);
 
         // Panell dret per a la taula
-        JPanel rightPanel = new JPanel();
-        rightPanel.setLayout(new BorderLayout());
+        JPanel rightPanel = new JPanel(new GridBagLayout());
         rightPanel.setBackground(new Color(173, 216, 230));
+
+        GridBagConstraints gbcRight = new GridBagConstraints();
+        gbc.gridx = 0;
+        gbc.gridy = 0;
+        gbc.fill = GridBagConstraints.BOTH;  // Perquè la taula s'expandeixi
+        gbc.weightx = 1;  // Expandir horitzontalment
+        gbc.weighty = 1;  // Expandir verticalment
+        gbc.insets = new Insets(10, 10, 10, 10);
+
 
         // Taula per mostrar les clíniques
         clinicaTable = new JTable();
@@ -143,11 +151,21 @@ public class ClinicaCrudScreen extends JPanel {
                 new Object[][] {},
                 new String[] {"Codi", "Nom del Centre"}  // Columnes per al codi i nom
         ));
+
+        // Configurar el color de fons de la taula perquè coincideixi amb el panell
+        clinicaTable.setBackground(new Color(173, 216, 230));
+        clinicaTable.setOpaque(true); // Assegurar que el color de fons s'aplica
+
+
         JScrollPane scrollPane = new JScrollPane(clinicaTable);
         scrollPane.setPreferredSize(new Dimension(500, 200));  // Ajustar el tamany de la taula
+        // Configurar el color de fons del JScrollPane (si es veu espai en blanc)
+        scrollPane.getViewport().setBackground(new Color(173, 216, 230));
+
 
         // Col·locar la taula al panell dret
-        rightPanel.add(scrollPane, BorderLayout.CENTER);
+        rightPanel.add(scrollPane, gbc);
+
 
         // Crear una divisió en el BorderLayout
         JSplitPane splitPane = new JSplitPane(JSplitPane.HORIZONTAL_SPLIT, leftPanel, rightPanel);
