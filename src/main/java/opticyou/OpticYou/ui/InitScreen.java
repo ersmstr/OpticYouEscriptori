@@ -3,8 +3,8 @@ package opticyou.OpticYou.ui;
  * Autor: mrami
  */
 
-import opticyou.OpticYou.service.AuthServiceClient;
-import opticyou.OpticYou.service.LoginResponseDTO;
+import opticyou.OpticYou.service.auth.AuthServiceClient;
+import opticyou.OpticYou.dto.LoginResponseDTO;
 import opticyou.OpticYou.ui.admin.AdminPanelScreen;
 import opticyou.OpticYou.ui.treballador.TreballadorScreen;
 import retrofit2.Call;

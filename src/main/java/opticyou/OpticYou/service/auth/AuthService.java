@@ -1,7 +1,9 @@
-package opticyou.OpticYou.service;
+package opticyou.OpticYou.service.auth;
 /**
  * Autor: mrami
  */
+import opticyou.OpticYou.dto.LoginRequestDTO;
+import opticyou.OpticYou.dto.LoginResponseDTO;
 import retrofit2.Call;
 import retrofit2.http.Body;
 import retrofit2.http.POST;

@@ -4,6 +4,8 @@ package opticyou.OpticYou.ui.crud;
  * Autor: mrami
  */
 
+import opticyou.OpticYou.model.Clinica;
+
 import javax.swing.*;
 import javax.swing.table.DefaultTableModel;
 import java.awt.*;
@@ -217,5 +219,16 @@ public class ClinicaCrudScreen extends JPanel {
 
     public void setEliminarListener(ActionListener listener) {
         btnEliminar.addActionListener(listener);
+    }
+
+    public Clinica crearClinicaDesdeFormulario() {
+        String nom = getNomCentre();
+        String direccio = getDireccio();
+        String telefon = getTelefon();
+        String horariApertura = getHorariApertura();
+        String horariTancament = getHorariTancament();
+        String email = getEmail();
+
+        return new Clinica(nom, direccio, telefon, horariApertura, horariTancament, email);
     }
 }

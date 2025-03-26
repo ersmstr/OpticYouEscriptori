@@ -3,7 +3,7 @@ package opticyou.OpticYou.ui.treballador;
  * Autor: mrami
  */
 //OpticYou client
-import opticyou.OpticYou.service.LogoutService;
+import opticyou.OpticYou.service.auth.LogoutService;
 import javax.swing.*;
 import java.awt.*;
 

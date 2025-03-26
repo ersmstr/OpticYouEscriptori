@@ -2,10 +2,10 @@ package OpticYou.service.ProvesIntegracio;
 /**
  * Autor: mrami
  */
-import opticyou.OpticYou.service.AuthService;
-import opticyou.OpticYou.service.AuthServiceClient;
-import opticyou.OpticYou.service.LoginRequestDTO;
-import opticyou.OpticYou.service.LoginResponseDTO;
+import opticyou.OpticYou.service.auth.AuthService;
+import opticyou.OpticYou.service.auth.AuthServiceClient;
+import opticyou.OpticYou.dto.LoginRequestDTO;
+import opticyou.OpticYou.dto.LoginResponseDTO;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import retrofit2.Call;

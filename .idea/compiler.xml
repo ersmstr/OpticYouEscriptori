@@ -9,9 +9,5 @@
         <module name="optic-you-swing" />
       </profile>
     </annotationProcessing>
-    <bytecodeTargetLevel>
-      <module name="OpticYouEsc" target="1.8" />
-      <module name="OpticYouTea2" target="1.8" />
-    </bytecodeTargetLevel>
   </component>
 </project>

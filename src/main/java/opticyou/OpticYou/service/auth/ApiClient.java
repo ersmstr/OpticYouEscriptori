@@ -1,4 +1,4 @@
-package opticyou.OpticYou.service;
+package opticyou.OpticYou.service.auth;
 
 /**
  * Autor: mrami
@@ -6,6 +6,7 @@ package opticyou.OpticYou.service;
 
 import okhttp3.OkHttpClient;
 import okhttp3.logging.HttpLoggingInterceptor;
+import opticyou.OpticYou.service.clinica.ClinicaApi;
 import retrofit2.Retrofit;
 import retrofit2.converter.gson.GsonConverterFactory;
 
@@ -29,6 +30,15 @@ public class ApiClient {
                     .build();
         }
         return retrofit;
+    }
+    // Método para obtener el cliente de autenticación (Login/Logout)
+    public static ApiClient getClientApi() {
+        return getClient().create(ApiClient.class);
+    }
+
+    // Método para obtener el cliente de clínicas
+    public static ClinicaApi getClinicaApi() {
+        return getClient().create(ClinicaApi.class);
     }
 }
 

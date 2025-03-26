@@ -1,4 +1,4 @@
-package opticyou.OpticYou.service;
+package opticyou.OpticYou.dto;
 /**
  * Autor: mrami
  */

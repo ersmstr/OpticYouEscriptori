@@ -1,9 +1,11 @@
-package opticyou.OpticYou.service;
+package opticyou.OpticYou.service.auth;
 /**
  * Autor: mrami
  */
 import okhttp3.OkHttpClient;
 import okhttp3.logging.HttpLoggingInterceptor;
+import opticyou.OpticYou.dto.LoginRequestDTO;
+import opticyou.OpticYou.dto.LoginResponseDTO;
 import retrofit2.Call;
 import retrofit2.Callback;
 import retrofit2.Retrofit;

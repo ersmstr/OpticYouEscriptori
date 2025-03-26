@@ -3,7 +3,7 @@ package opticyou.OpticYou.ui.admin;
  * Autor: mrami
  */
 
-import opticyou.OpticYou.service.LogoutService;
+import opticyou.OpticYou.service.auth.LogoutService;
 import opticyou.OpticYou.ui.crud.ClinicaCrudScreen;
 
 import javax.swing.*;

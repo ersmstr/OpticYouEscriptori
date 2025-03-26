@@ -1,4 +1,4 @@
-package opticyou.OpticYou.service;
+package opticyou.OpticYou.service.auth;
 
 import retrofit2.Call;
 import retrofit2.Callback;
