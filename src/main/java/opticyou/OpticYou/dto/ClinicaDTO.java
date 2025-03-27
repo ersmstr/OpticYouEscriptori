@@ -11,6 +11,15 @@ public class ClinicaDTO {
     private String horari_tancament;
     private String email;
 
+    public ClinicaDTO(String nom, String direccio, String telefon, String horari_opertura, String horari_tancament, String email) {
+        this.nom = nom;
+        this.direccio = direccio;
+        this.telefon = telefon;
+        this.horari_opertura = horari_opertura;
+        this.horari_tancament = horari_tancament;
+        this.email = email;
+    }
+
     // Getters y setters
     public String getNom() {
         return nom;

@@ -1,8 +1,6 @@
 package opticyou.OpticYou.service.clinica;
 
-/**
- * Autor: mrami
- */
+
 
 import opticyou.OpticYou.dto.ClinicaDTO;
 import opticyou.OpticYou.model.Clinica;
@@ -14,14 +12,19 @@ import opticyou.OpticYou.service.auth.*;
 
 import java.util.List;
 
-public class ClinicaService {
-    private final ClinicaApi clinicaApi;
+/**
+ * Autor: mrami
+ */
 
-    public ClinicaService() {
-        clinicaApi = ApiClient.getClient().create(ClinicaApi.class);  // Usamos ApiClient para obtener la instancia
-    }
-    // Método para obtener todas las clínicas
-    public void cargarClinicas(String token) {
+public class ClinicaService {
+
+    private ClinicaApi clinicaApi;
+
+
+    // MéTODE PER OBTENIR LES CLÍNIQUES
+    public void carregarClinicas(String token) {
+        ClinicaApi clinicaApi = ApiClient.getClinicaApi(token);
+
         clinicaApi.getAllClinicas(token).enqueue(new Callback<List<ClinicaDTO>>() {
             @Override
             public void onResponse(Call<List<ClinicaDTO>> call, Response<List<ClinicaDTO>> response) {
@@ -30,7 +33,7 @@ public class ClinicaService {
                     // Hacer algo con la lista de clínicas
                     System.out.println(clinicas);
                 } else {
-                    System.err.println("Error al obtener las clínicas.");
+                    System.err.println("Error AL CARREGAR LES CLÍNIQUES.");
                 }
             }
 
@@ -81,5 +84,5 @@ public class ClinicaService {
             }
         });
     }
-    }
+ }
 

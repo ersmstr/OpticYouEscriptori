@@ -16,6 +16,7 @@ public class ApiClient {
 
     public static Retrofit getClient() {
         if (retrofit == null) {
+
             HttpLoggingInterceptor loggingInterceptor = new HttpLoggingInterceptor();
             loggingInterceptor.setLevel(HttpLoggingInterceptor.Level.BODY);
 
@@ -37,8 +38,24 @@ public class ApiClient {
     }
 
     // Método para obtener el cliente de clínicas
-    public static ClinicaApi getClinicaApi() {
-        return getClient().create(ClinicaApi.class);
+    public static ClinicaApi getClinicaApi(String token) {
+        // Aquí passarem el token per afegir-lo manualment als encapçalaments si és necessari.
+        OkHttpClient client = new OkHttpClient.Builder()
+                .addInterceptor(chain -> {
+                    // Afegir el token a l'encapçalament Authorization
+                    return chain.proceed(chain.request().newBuilder()
+                            .header("Authorization", "Bearer " + token)
+                            .build());
+                })
+                .build();
+
+        Retrofit retrofitWithToken = new Retrofit.Builder()
+                .baseUrl(BASE_URL)
+                .client(client)
+                .addConverterFactory(GsonConverterFactory.create())
+                .build();
+
+        return retrofitWithToken.create(ClinicaApi.class);
     }
 }
 
